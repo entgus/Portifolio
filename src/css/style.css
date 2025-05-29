@@ -181,4 +181,17 @@ height: 200px;
   position: relative;
   z-index: 1; /* conteúdo acima da camada escura */
 }
+#golpes,
+#treinamento,
+#lutas,
+#social {
+  margin-left: 350px; /* distância da sidebar */
+  padding: 50px 20px;
+  min-height: 100vh; /* ocupa toda a altura */
+}
 
+#desafio {
+  margin-left: 450px; /* distância da sidebar */
+  padding: 50px 20px;
+  min-height: 100vh; /* ocupa toda a altura */
+}
