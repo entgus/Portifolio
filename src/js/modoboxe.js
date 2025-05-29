@@ -2,12 +2,12 @@ document.addEventListener('click', () => {
   const elementos = document.querySelectorAll('body, button, a, .btn');
 
   elementos.forEach(el => {
-    el.style.cursor = 'url("./src/imagens/click.cur"), auto';
+    el.style.cursor = 'url("/Portifolio/src/imagens/click.cur"), auto';
   });
 
   setTimeout(() => {
     elementos.forEach(el => {
-      el.style.cursor = "url('./src/imagens/cursor.cur'), auto";
+      el.style.cursor = "url('/Portifolio/src/imagens/cursor.cur'), auto";
     });
   }, 1000);
 });
@@ -33,41 +33,15 @@ function efeitoSoco() {
 botoes.forEach(botao => {
   botao.addEventListener('click', efeitoSoco);
 });
-let segundos = 0, minutos = 0, intervalo;
 
-function atualizarTempo() {
-  segundos++;
-  if (segundos === 60) {
-    minutos++;
-    segundos = 0;
-  }
-  document.getElementById('tempoTreino').textContent = 
-    `${minutos < 10 ? '0' + minutos : minutos}:${segundos < 10 ? '0' + segundos : segundos}`;
-}
-
-function iniciarTreino() {
-  clearInterval(intervalo);
-  intervalo = setInterval(atualizarTempo, 1000);
-}
-
-function pausarTreino() {
-  clearInterval(intervalo);
-}
-
-function zerarTreino() {
-  clearInterval(intervalo);
-  minutos = 0;
-  segundos = 0;
-  document.getElementById('tempoTreino').textContent = '00:00';
-}
 const sons = {
-  ringue: new Audio('/src/sons/soco.mp3'),
-  bastidores: new Audio('/src/sons/fotos.mp3'),
-  golpes: new Audio('/src/sons/sino.mp3'),
-  treinamentos: new Audio('/src/sons/corda.mp3'),
-  lutas: new Audio('/src/sons/aplausos.mp3'),
-  social: new Audio('/src/sons/assobio.mp3'),
-  desafio: new Audio('/src/sons/tambor.mp3')
+  ringue: new Audio('/Portifolio/src/sons/soco.mp3'),
+  bastidores: new Audio('/Portifolio/src/sons/fotos.mp3'),
+  golpes: new Audio('/Portifolio/src/sons/sino.mp3'),
+  treinamentos: new Audio('/Portifolio/src/sons/corda.mp3'),
+  lutas: new Audio('/Portifolio/src/sons/aplausos.mp3'),
+  social: new Audio('/Portifolio/src/sons/assobio.mp3'),
+  desafio: new Audio('/Portifolio/src/sons/tambor.mp3')
 };
 
 botoes.forEach(botao => {
