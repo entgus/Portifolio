@@ -62,12 +62,12 @@ function zerarTreino() {
 }
 const sons = {
   ringue: new Audio('/Portifolio/src/sons/soco.mp3'),
-  bastidores: new Audio('.Portifolio/src/sons/fotos.mp3'),
-  golpes: new Audio('Portifolio/src/sons/sino.mp3'),
-  treinamentos: new Audio('src/sons/corda.mp3'),
-  lutas: new Audio('.src/sons/aplausos.mp3'),
-  social: new Audio('/src/sons/assobio.mp3'),
-  desafio: new Audio('/src/sons/tambor.mp3')
+  bastidores: new Audio('/Portifolio/src/sons/fotos.mp3'),
+  golpes: new Audio('/Portifolio/src/sons/sino.mp3'),
+  treinamentos: new Audio('/Portifolio/src/sons/corda.mp3'),
+  lutas: new Audio('/Portifolio/src/sons/aplausos.mp3'),
+  social: new Audio('/Portifolio/src/sons/assobio.mp3'),
+  desafio: new Audio('/Portifolio/src/sons/tambor.mp3')
 };
 
 botoes.forEach(botao => {
