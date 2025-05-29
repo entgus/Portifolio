@@ -61,9 +61,13 @@
 
 
   /* Ajustes para seções principais */
-  #ringue,
-  #bastidores,
-  #treinamentos {
+#golpes,
+#lutas,
+#social,
+#desafio,
+#ringue,
+#bastidores,
+#treinamentos  {
     margin-left: 0 !important;
     width: 100% !important;
     padding: 20px;
