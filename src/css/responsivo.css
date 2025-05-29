@@ -1,0 +1,72 @@
+@media (max-width: 991px) {
+  .sidebar {
+    position: relative;          
+    width: 100%;                
+    height: auto;               
+    top: 0;
+    transform: none;
+    background: linear-gradient(to bottom, #b30000, #000);
+    
+    display: flex;              /* Flexbox para alinhar tudo em linha */
+    flex-direction: row;        
+    align-items: center;        
+    justify-content: space-between; /* Ou center, ou start, como quiser */
+    gap: 10px;                  /* Espaço entre os itens */
+    
+    padding: 10px 20px;
+    z-index: 10;
+    text-align: left;           /* Evita centralizar textos no modo linha */
+  }
+
+  .sidebar h2 {
+    font-size: 1rem;            /* Reduz o tamanho se necessário */
+    padding: 0;                 /* Remove padding grande */
+    margin: 0;                  /* Remove margens */
+  }
+
+  .sidebar .img-fluid {
+    width: 60px;                /* Tamanho reduzido para caber na linha */
+    height: 60px;
+  }
+
+  .sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .sidebar .menu {
+    display: flex;              /* Flex para colocar botões em linha */
+    flex-wrap: wrap;            /* Se não couber, quebra para outra linha */
+    gap: 5px;                   /* Espaçamento entre botões */
+  }
+
+  .sidebar .menu li {
+    list-style: none;
+  }
+
+  .button {
+    width: auto;                /* Mantém largura conforme conteúdo */
+    padding: 5px 10px;          /* Ajuste de padding */
+    font-size: 0.9rem;
+  }
+}
+/* Ajustes para a seção #ringue */
+#ringue h1 {
+  font-size: 2.5rem;
+}
+
+#ringue h2 {
+  font-size: 1.5rem;
+}
+
+#ringue p {
+  font-size: 1rem;
+}
+
+#modoboxe {
+  width: 150px;
+  height: 150px;
+}
+
+

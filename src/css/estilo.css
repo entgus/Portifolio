@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, sans-serif;
+    
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction:  column;
+    height: 100vh;  
+}
+body.modoboxe {
+    background-image: url(/src/imagens/modoboxe.png);
+
+}
