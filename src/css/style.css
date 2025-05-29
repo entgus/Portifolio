@@ -126,7 +126,7 @@ body, button, a, .btn {
   animation: soco 0.3s ease-in-out;
 }
  #ringue {
- background-image: url(/src/imagens/ringue.png);
+ background-image: url(/Portifolio/src/imagens/ringue.png);
  background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
@@ -160,7 +160,7 @@ height: 200px;
   background: #000; /* fundo do conteúdo preto */
 }
 #desafio {
-  background-image: url('/src/imagens/formulario.png');
+  background-image: url('/Portifolio/src/imagens/formulario.png');
   background-size: cover; /* cobre todo o espaço */
   background-position: center; /* centraliza a imagem */
   background-repeat: no-repeat;
