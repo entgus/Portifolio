@@ -1,13 +1,12 @@
 const botao = document.getElementById('modoboxe');
 
 botao.addEventListener('click', () => {
-    const atual = window.location.pathname;
+    const base = window.location.origin + window.location.pathname.split('/')[1];
 
-    if (atual.endsWith('/') || atual.endsWith('/index.html')) {
-      
-        window.location.href = 'modoboxe.html';
-    } else if (atual.includes('modoboxe.html')) {
-        window.location.href = 'index.html';
+    if (window.location.pathname.endsWith('/') || window.location.pathname.endsWith('index.html')) {
+        window.location.href = base + '/modoboxe.html';
+    } else if (window.location.pathname.includes('modoboxe.html')) {
+        window.location.href = base + '/index.html';
     } else {
         console.error('Página atual desconhecida.');
     }
