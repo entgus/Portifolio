@@ -1,0 +1,206 @@
+@media (max-width: 991px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #b30000, #000);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 1100;
+  }
+/* Esconder a imagem grande, colocar menor e circular */
+.sidebar > img.img-fluid,
+.sidebar > h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sidebar > img.img-fluid {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px; /* espaço entre imagem e texto */
+}
+
+.sidebar > h2 {
+  font-size: 1rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+  /* Menu vira uma linha horizontal com overflow para scroll */
+  .menu {
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    overflow-x: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Os botões menores para caber */
+  .button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    border-radius: 8px;
+  }
+
+  /* Ajuste do conteúdo para ficar abaixo da topbar */
+  .conteudo {
+    margin-left: 0 !important;
+    margin-top: 100px; /* altura da topbar */
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+
+  /* Ajustes para seções principais */
+  #ringue,
+  #bastidores,
+  #treinamentos {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 20px;
+    min-height: auto;
+    box-sizing: border-box;
+    margin-top: 100px;
+  }
+  #desafio {
+    margin-top: 100px;
+  }
+  /* Ajustes para cards no treinamentos */
+  #treinamentos .card {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+    height: auto !important;
+    border-radius: 8px;
+    background: none;
+    border: transparent;
+    color: aqua;
+  }
+
+  #treinamentos .card-header {
+    background: linear-gradient(to right, #b30000, #000);
+  }
+  
+  #treinamentos .card-body {
+    background: #000;
+  }
+
+  /* Ajuste do #ringue para altura flexível */
+  #ringue {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/* Para tablets retrato e telas médias (<=768px) */
+@media (max-width: 768px) {
+  .sidebar {
+    height: 160px; /* um pouco menor */
+    padding: 0 10px;
+  }
+
+  .sidebar > img.img-fluid {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sidebar > h2 {
+    font-size: 0.9rem;
+  }
+
+   .button {
+    padding: 5px 8px; /* mais compacto */
+    font-size: 0.75rem; /* menor fonte */
+    border-radius: 6px;
+  }
+
+
+  .conteudo {
+    margin-top: 90px;
+  }
+
+  #ringue,
+  #bastidores,
+  #treinamentos,
+  #desafio {
+    margin-top: 90px;
+  }
+}
+
+/* Para smartphones maiores (<=576px) */
+@media (max-width: 576px) {
+  .sidebar {
+    height: 140px;
+    padding: 0 8px;
+  }
+
+  .sidebar > img.img-fluid {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sidebar > h2 {
+    font-size: 0.85rem;
+  }
+
+  .button {
+    padding: 2px 4px; /* ainda menor */
+    font-size: 0.6rem;
+    border-radius: 4px;
+  }
+
+
+  .conteudo {
+    margin-top: 80px;
+  }
+
+  #ringue,
+  #bastidores,
+  #treinamentos,
+  #desafio {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 400px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5px; /* espaço ainda menor */
+    width: 100%;
+    overflow-x: auto; /* permite scroll horizontal se necessário */
+    padding: 0 5px; /* proteção nas bordas */
+    box-sizing: border-box;
+  }
+
+  .button {
+    padding: 2px 4px; /* super compacto */
+    font-size: 0.6rem;
+    border-radius: 3px;
+    flex-shrink: 0; /* evita encolher mais */
+    white-space: nowrap; /* mantém os botões numa linha */
+  }
+
+  .sidebar {
+    height: auto; /* ajusta a altura automaticamente ao conteúdo */
+    padding: 10px 5px; /* espaçamento interno reduzido */
+  }
+
+  .sidebar > img.img-fluid {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+  }
+
+  .sidebar > h2 {
+    font-size: 0.75rem;
+  }
+}
