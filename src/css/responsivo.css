@@ -12,12 +12,12 @@
   .menu {
     width: 120px; /* reduz largura */
     gap: 0px; /* menos espaço entre botões */
-    margin: 10px auto; /* reduz margem */
+    margin: 0px auto; /* reduz margem */
   }
 
   .button {
-    padding: 8px 12px; /* reduz tamanho */
-    font-size: 14px;
+    padding: 4px 6px; /* reduz tamanho */
+    font-size: 10px;
     border-radius: 8px; /* menos arredondado */
   }
 
