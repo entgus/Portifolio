@@ -16,8 +16,8 @@
   }
 
   .button {
-    padding: 4px 6px; /* reduz tamanho */
-    font-size: 10px;
+    padding: 7px 9px; /* reduz tamanho */
+    font-size: 12px;
     border-radius: 8px; /* menos arredondado */
   }
 
